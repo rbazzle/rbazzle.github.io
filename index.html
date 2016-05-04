@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="Bazzle-favicon" href="favicon.ico">
+    <!-- Place favicon.ico in the root directory -->
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:300, 400' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script async src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script async src="js/plugins.js"></script>
+    <script async src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controller.js"></script>
+<!--     <script type="text/javascript" src="js/angular.min.js"></script>
+-->
+</head>
+<body ng-app='myApp'>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+
+            <!-- Add your site or application content here -->
+            <section id = "section1">
+                <div id="title">
+                    <h1>Ryon Bazzle</h1>
+                    <h2>User Experience & Web Designer</h2>
+                </div>
+            </section>
+            <section id = "section2">
+                <div id="green">
+                  <img src="img/desk1.jpg">
+                  <div id="description">
+                    I’m just a nature loving, audiobook listening, sushi devouring guy who is passionate about designing for people.
+                </div>
+            </div>
+        </section>
+        <section id = "section4">
+            <ol class="container2">
+                <li class = "card"><h3>UX Design</h3><p>User experience is the overall experience of a person using a product, where the needs and wants of the person match the design of the business. I do this.</p></li>
+                <li class = "card"><h3>Web Design</h3><p>Creating landing pages and interactions by designing flows and layouts to make a seamless user experience. I like to make awesome things... I think most folks do. I know code. </p></li>
+                <li class = "card"><h3>Photography</h3><p>There's nothing better than taking a hike in the great outdoors with friends and a camera. Feel free to check out my instagram.</p><a href="https://www.instagram.com/rbazzle/" target="blank"><img src="../img/instagram-iso-black.png"></a></li>
+            </ol>
+        </section>
+        <section id ="section3" ng-controller = "MainController" >
+            <div class="container">
+                <a href="" id="previous" ng-click="decrement(slide);"><img src="img/left.svg"></a>
+                <a href="" id="next" ng-click="increment(slide);"><img src="img/left.svg"></a>
+                <ol>
+                    <li ng-class="{'slideClosed': $index !== slide || $index !== slide - 1 || $index !== slide + 1, 'slideSide': $index == slide +1 || $index == slide -1, 'slideOpen':$index == slide}" ng-repeat = "work in works" ng-style="{'background-image': 'url(' + work + ')'}"></li>
+                </ol>
+            </div>
+        </section>
+        <footer>
+            
+        </footer>
+
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+    </html>
