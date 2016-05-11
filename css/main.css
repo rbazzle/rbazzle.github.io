@@ -421,6 +421,23 @@ li {
     position: relative;
 }
 
+#contact{
+    margin: auto;
+    margin-top: 150px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    line-height: 21px;
+    font-size: 21px;
+    line-height: 21px;
+    height: 20px;    color: #234368;
+    background-color: rgba(255,255,255, 1);
+    border-radius: 25px;
+    display: block;
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+}
+
 footer {
     width: 100%;
     background-color: #0E151D;
