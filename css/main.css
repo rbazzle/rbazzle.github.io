@@ -196,8 +196,6 @@ p {
     width:100%;
     height: 550px;
     position: relative;
-    background-image:  url(../img/cartographer.png);
-    background-repeat: repeat;
 }
 
 #description{
@@ -327,7 +325,8 @@ li {
         min-height: 450px;
         position: relative;
         display: flex;
-        background-image: url(../img/Tall-topo.jpg);
+        background-image:  url(../img/topo.png);
+        background-color: #A0CEA7;
         background-size: cover;
         margin: auto;
     }
@@ -353,7 +352,8 @@ li {
         min-height: 450px;
         position: relative;
         display: flex;
-        background-image: url(../img/Wide-topo.jpg);
+        background-image:  url(../img/topo.png);
+        background-color: #A0CEA7;
         background-size: cover;
         margin: auto;
     }
