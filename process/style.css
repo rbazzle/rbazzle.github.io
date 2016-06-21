@@ -176,10 +176,10 @@ span{
   color: #6BC045;
   line-height: 20px;
 }
-#singleSection{
+.singleSection{
   margin-top: 150px;
 }
-#singlePhoto{
+.singlePhoto{
   width: 100%;
 }
 
